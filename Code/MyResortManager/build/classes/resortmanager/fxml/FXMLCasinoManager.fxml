@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<fx:root minHeight="400.0" minWidth="900.0" stylesheets="@../css/fxmlcasinomanager.css" type="VBox" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <AnchorPane prefHeight="367.0" prefWidth="868.0">
+      <children>
+         <ImageView fitHeight="175.0" fitWidth="228.0" layoutX="7.0" layoutY="44.0">
+            <image>
+               <Image url="@../images/casino_manager.jpg" />
+            </image>
+         </ImageView>
+         <VBox layoutX="6.0" layoutY="238.0" prefHeight="95.0" prefWidth="867.0" />
+         <Label prefHeight="34.0" prefWidth="391.0" text="Casino Manager - Custom Operations" textFill="#03b520">
+            <font>
+               <Font name="System Bold" size="21.0" />
+            </font>
+         </Label>
+         <HBox layoutX="252.0" layoutY="63.0" prefHeight="49.0" prefWidth="595.0">
+            <children>
+                  <Button fx:id="create_auction" mnemonicParsing="false" prefHeight="37.0" prefWidth="163.0" stylesheets="@../css/fxmlcasinomanager.css" text="Create Auction">
+                  <HBox.margin>
+                     <Insets right="20.0" />
+                  </HBox.margin>
+               </Button>
+                  <Button fx:id="change_policy" mnemonicParsing="false" prefHeight="37.0" prefWidth="184.0" stylesheets="@../css/fxmlcasinomanager.css" text="Change Policy">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="request_security" mnemonicParsing="false" stylesheets="@../css/fxmlcasinomanager.css" text="Request Security" />
+            </children>
+         </HBox>
+         <HBox layoutX="257.0" layoutY="150.0" prefHeight="48.0" prefWidth="598.0">
+            <children>
+                  <Button fx:id="manage_taxes" mnemonicParsing="false" style="-fx-alignment: center;" stylesheets="@../css/fxmlcasinomanager.css" text="Manage Taxes">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="manage_bids" mnemonicParsing="false" prefHeight="37.0" prefWidth="187.0" style="-fx-alignment: center;" stylesheets="@../css/fxmlcasinomanager.css" text="Invite Celebrities">
+                  <HBox.margin>
+                     <Insets right="20.0" />
+                  </HBox.margin>
+               </Button>
+               <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="187.0" style="-fx-alignment: center;" stylesheets="@../css/fxmlcasinomanager.css" text="Manage Bids" />
+            </children>
+         </HBox>
+      </children>
+   </AnchorPane>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</fx:root>

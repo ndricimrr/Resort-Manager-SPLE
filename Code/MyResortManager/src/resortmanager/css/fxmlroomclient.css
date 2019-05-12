@@ -1,0 +1,36 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+  
+.button{
+    -fx-background-color: 
+         linear-gradient(#ff0000  0%,  #ea0202 100%);
+    -fx-font-size: 20px;
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-font-family: "Arial";
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: white;
+}
+.button:hover{
+    -fx-background-color:yellow;
+    -fx-font-size: 20px;
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #395306;
+}
+
+.button:pressed{
+     -fx-background-color: red;
+    -fx-font-size: 20px;
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #395306;
+}   

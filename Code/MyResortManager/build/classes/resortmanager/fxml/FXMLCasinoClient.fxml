@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<fx:root minHeight="323.0" minWidth="893.0" prefHeight="323.0" prefWidth="893.0" stylesheets="@../css/fxmlcasinoclient.css" type="VBox" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <AnchorPane prefHeight="309.0" prefWidth="875.0">
+      <children>
+         <Label prefHeight="34.0" prefWidth="391.0" text="Casino Client - Custom Operations" textFill="#03ae00">
+            <font>
+               <Font name="System Bold" size="21.0" />
+            </font>
+         </Label>
+         <ImageView fitHeight="168.0" fitWidth="243.0" layoutX="4.0" layoutY="66.0">
+            <image>
+               <Image url="@../images/casino_client.jpg" />
+            </image>
+         </ImageView>
+         <HBox layoutX="259.0" layoutY="69.0" prefHeight="51.0" prefWidth="595.0">
+            <children>
+                  <Button fx:id="show_empty_rooms" mnemonicParsing="false" prefHeight="37.0" prefWidth="228.0" stylesheets="@../css/fxmlcasinoclient.css" text="Reserve Game Table">
+                  <HBox.margin>
+                     <Insets right="20.0" />
+                  </HBox.margin>
+               </Button>
+                  <Button fx:id="get_room_number_request" mnemonicParsing="false" prefHeight="37.0" prefWidth="161.0" stylesheets="@../css/fxmlcasinoclient.css" text="Reseve Seat">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </Button>
+               <Button fx:id="get_room_number_request1" mnemonicParsing="false" prefHeight="37.0" prefWidth="138.0" stylesheets="@../css/fxmlcasinoclient.css" text="Bid" />
+            </children>
+         </HBox>
+         <HBox layoutX="258.0" layoutY="234.0" prefHeight="48.0" prefWidth="601.0">
+            <children>
+                  <Button fx:id="assign_room_to_client" mnemonicParsing="false" prefHeight="37.0" prefWidth="229.0" style="-fx-alignment: center;" stylesheets="@../css/fxmlcasinoclient.css" text="Show Casino Options">
+                  <HBox.margin>
+                     <Insets right="20.0" />
+                  </HBox.margin>
+               </Button>
+                  <Button fx:id="show_expiring_reservation" mnemonicParsing="false" prefHeight="37.0" prefWidth="293.0" style="-fx-alignment: center;" stylesheets="@../css/fxmlcasinoclient.css" text="Modify Seat Reservation">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </Button>
+            </children>
+         </HBox>
+         <HBox layoutX="258.0" layoutY="120.0" prefHeight="48.0" prefWidth="601.0">
+            <children>
+               <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="229.0" style="-fx-alignment: center;" stylesheets="@../css/fxmlcasinoclient.css" text="OrderChips">
+                  <HBox.margin>
+                     <Insets right="20.0" />
+                  </HBox.margin>
+               </Button>
+               <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="291.0" style="-fx-alignment: center;" stylesheets="@../css/fxmlcasinoclient.css" text="Issue Game Error Complaint">
+                  <HBox.margin>
+                     <Insets right="20.0" />
+                  </HBox.margin>
+               </Button>
+            </children>
+         </HBox>
+         <HBox layoutX="258.0" layoutY="176.0" prefHeight="48.0" prefWidth="601.0">
+            <children>
+               <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="228.0" style="-fx-alignment: center;" stylesheets="@../css/fxmlcasinoclient.css" text="Ask Notery Help">
+                  <HBox.margin>
+                     <Insets right="20.0" />
+                  </HBox.margin>
+               </Button>
+               <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="289.0" style="-fx-alignment: center;" stylesheets="@../css/fxmlcasinoclient.css" text="Issue Cheating Complaint">
+                  <HBox.margin>
+                     <Insets right="20.0" />
+                  </HBox.margin>
+               </Button>
+            </children>
+         </HBox>
+      </children>
+   </AnchorPane>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</fx:root>
